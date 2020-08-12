@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @plant.name %>
+</p>
+
+<p>
+  <strong>Kingdom:</strong>
+  <%= @plant.kingdom %>
+</p>
+
+
+#Se agregan los nuevos campos que queremos mostrar en la vista show (de cada registro)
+<p>
+  <strong>Daily_quantity:</strong>
+  <%= @plant.daily_quantity %>
+</p>
+
+<p>
+  <strong>Last_watering:</strong>
+  <%= @plant.last_watering %>
+</p>
+
+<p>
+  <strong>Daily_volume:</strong>
+  <%= @plant.daily_volume %>
+</p>
+
+<p>
+  <strong>Daily_minutes:</strong>
+  <%= @plant.daily_minutes %>
+</p>
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>
